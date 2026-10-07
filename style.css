@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Button Base Styles */
+.btn {
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 0.75rem 0;
+    border-radius: 0.75rem;
+    transition: all 0.15s ease-in-out;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:active {
+    transform: scale(0.94);
+}
+
+/* Scientific Function Button */
+.btn-sci {
+    background-color: #0284c7;
+    border: 1px solid #0369a1;
+    color: #e0f2fe;
+}
+
+.btn-sci:hover {
+    background-color: #0369a1;
+    color: #ffffff;
+}
+
+/* Number Button */
+.btn-number {
+    background-color: #0f172a;
+    border: 1px solid #1e293b;
+    color: #f1f5f9;
+}
+
+.btn-number:hover {
+    background-color: #1e293b;
+    border-color: #334155;
+}
+
+/* Action Button (AC, DEL, %) */
+.btn-action {
+    background-color: #1e1b4b;
+    border: 1px solid #312e81;
+    color: #a5b4fc;
+}
+
+.btn-action:hover {
+    background-color: #312e81;
+    color: #ffffff;
+}
+
+/* Operator Button (+, -, ×, ÷) */
+.btn-operator {
+    background-color: #312e81;
+    border: 1px solid #4338ca;
+    color: #c7d2fe;
+}
+
+.btn-operator:hover {
+    background-color: #4338ca;
+    color: #ffffff;
+}
+
+/* Equals Button */
+.btn-equals {
+    background-color: #4f46e5;
+    border: 1px solid #6366f1;
+    color: #ffffff;
+    font-size: 1.125rem;
+}
+
+.btn-equals:hover {
+    background-color: #6366f1;
+}

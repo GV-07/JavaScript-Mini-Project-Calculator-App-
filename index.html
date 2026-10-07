@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Mini Project - Scientific Calculator</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex items-center justify-center p-4">
+
+    <div class="w-full max-w-lg bg-slate-900 border border-slate-800 rounded-3xl shadow-2xl p-6">
+        
+        <!-- Header -->
+        <div class="flex items-center justify-between pb-4 mb-4 border-b border-slate-800">
+            <h1 class="text-lg font-bold text-indigo-400 flex items-center gap-2">
+                <span>🧪</span> Scientific Calculator
+            </h1>
+            <span class="text-xs font-semibold px-2.5 py-1 bg-indigo-950 text-indigo-300 border border-indigo-800 rounded-full">
+                DOM Project
+            </span>
+        </div>
+
+        <!-- Calculator Display Screen -->
+        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-4 mb-5 text-right shadow-inner">
+            <div id="history-display" class="text-xs text-slate-500 h-5 overflow-hidden font-mono truncate"></div>
+            <div id="main-display" class="text-3xl font-bold text-white h-10 overflow-hidden font-mono truncate">0</div>
+        </div>
+
+        <!-- Keypad Grid (5 columns for Scientific Layout) -->
+        <div class="grid grid-cols-5 gap-2.5">
+            <!-- Row 1: Scientific Functions -->
+            <button class="btn btn-sci" data-func="sin">sin</button>
+            <button class="btn btn-sci" data-func="cos">cos</button>
+            <button class="btn btn-sci" data-func="tan">tan</button>
+            <button class="btn btn-action" data-action="clear">AC</button>
+            <button class="btn btn-action" data-action="delete">DEL</button>
+
+            <!-- Row 2: Scientific Functions -->
+            <button class="btn btn-sci" data-func="pow">x<sup>y</sup></button>
+            <button class="btn btn-sci" data-func="square">x²</button>
+            <button class="btn btn-sci" data-func="sqrt">√</button>
+            <button class="btn btn-action" data-action="percent">%</button>
+            <button class="btn btn-operator" data-operator="÷">÷</button>
+
+            <!-- Row 3 -->
+            <button class="btn btn-sci" data-func="log">log</button>
+            <button class="btn btn-number" data-number="7">7</button>
+            <button class="btn btn-number" data-number="8">8</button>
+            <button class="btn btn-number" data-number="9">9</button>
+            <button class="btn btn-operator" data-operator="×">×</button>
+
+            <!-- Row 4 -->
+            <button class="btn btn-sci" data-func="ln">ln</button>
+            <button class="btn btn-number" data-number="4">4</button>
+            <button class="btn btn-number" data-number="5">5</button>
+            <button class="btn btn-number" data-number="6">6</button>
+            <button class="btn btn-operator" data-operator="-">-</button>
+
+            <!-- Row 5 -->
+            <button class="btn btn-sci" data-func="pi">π</button>
+            <button class="btn btn-number" data-number="1">1</button>
+            <button class="btn btn-number" data-number="2">2</button>
+            <button class="btn btn-number" data-number="3">3</button>
+            <button class="btn btn-operator" data-operator="+">+</button>
+
+            <!-- Row 6 -->
+            <button class="btn btn-sci" data-func="e">e</button>
+            <button class="btn btn-number" data-number="0">0</button>
+            <button class="btn btn-number" data-number=".">.</button>
+            <button class="btn btn-equals col-span-2" data-action="equals">=</button>
+        </div>
+
+    </div>
+
+    <!-- Script loaded with defer -->
+    <script src="script.js" defer></script>
+</body>
+</html>
